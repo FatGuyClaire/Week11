@@ -11,6 +11,7 @@ class gameControler {
     $(".col-4").each((i, element) => (element.innerHTML = ""));
     this.turn = "X";
     this.modal.hide();
+    this.displayTurn();
   }
   displayTurn() {
     $("#turnIndicator").text(`It is ${this.turn}'s turn!`);
